@@ -1,0 +1,5 @@
+P50012 S0031 Electronics 450000 OnSale
+P50013 S0031 Book 12000 Reserved
+P50014 S0107 Electronics 450000 OnSale
+P50015 S0042 Fashion 30000 SoldOut
+P50016 S0107 Furniture 120000 OnSale
