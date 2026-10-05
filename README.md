@@ -44,7 +44,7 @@ sudo apt install g++
 - 반드시 Makefile이 위치한 디렉토리 내에서 수행해야 함. cd(change directory)로 변경하기
 
 ```bash
-cd DS_Project2_26
+cd DS_Project2
 make
 ./run
 ```
