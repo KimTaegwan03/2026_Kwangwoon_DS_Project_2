@@ -20,7 +20,7 @@ public:
     bool Delete(ItemData* pItem);          // remove item, delete key if vector is empty
     BpTreeNode* searchDataNode(int price); // find the data node that should contain price
 
-    bool searchItem(int price, ofstream& os);                  // SEARCH_BP with 1 argument
-    bool searchRange(int minPrice, int maxPrice, ofstream& os); // SEARCH_BP with 2 arguments
-    bool printAll(ofstream& os);                               // PRINT_BP
+    bool searchItem(int price, ofstream& os);                  // SEARCH Price with 1 argument
+    bool searchRange(int minPrice, int maxPrice, ofstream& os); // SEARCH Price with 2 arguments
+    bool printAll(ofstream& os);                               // PRINT Price
 };

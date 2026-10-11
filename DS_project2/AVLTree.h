@@ -25,6 +25,6 @@ public:
     AVLNode* getRoot() { return root; }
 
     bool Insert(ItemData* pItem);          // insert and rebalance
-    ItemData* Search(const string& itemId); // search by item ID
-    bool Print(ofstream& os);              // inorder traversal
+    ItemData* Search(const string& itemId); // SEARCH ID
+    bool Print(ofstream& os);              // PRINT ID: iterative inorder traversal
 };

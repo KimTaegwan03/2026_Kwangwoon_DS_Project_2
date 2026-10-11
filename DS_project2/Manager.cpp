@@ -4,12 +4,18 @@ Manager::Manager()
 {
     avl = new AVLTree();
     bp = new BpTree(3);
+
+    const string categories[5] = { "Electronics", "Fashion", "Furniture", "Book", "Sports" };
+    for (int i = 0; i < 5; i++)
+        heap[i] = new CategoryHeap(categories[i]);
 }
 
 Manager::~Manager()
 {
-    // release B+ Tree first (pointers only), then AVL Tree (owns ItemData)
+    // release B+ Tree and heaps first (pointers only), then AVL Tree (owns ItemData)
     delete bp;
+    for (int i = 0; i < 5; i++)
+        delete heap[i];
     delete avl;
 }
 
@@ -33,22 +39,12 @@ bool Manager::UPDATE(const vector<string>& args)
     
 }
 
-bool Manager::SEARCH_BP(const vector<string>& args)
+bool Manager::SEARCH(const vector<string>& args)
 {
     
 }
 
-bool Manager::SEARCH_AVL(const vector<string>& args)
-{
-    
-}
-
-bool Manager::PRINT_BP(const vector<string>& args)
-{
-    
-}
-
-bool Manager::PRINT_AVL(const vector<string>& args)
+bool Manager::PRINT(const vector<string>& args)
 {
     
 }
